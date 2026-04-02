@@ -197,6 +197,9 @@
     .work-preview.fitness { background: linear-gradient(135deg, #100808, #2a0808); }
     .work-preview.nori { background: linear-gradient(135deg, #09090b, #1a120a); }
     .work-preview.law { background: linear-gradient(135deg, #08101a, #0e1926); }
+    .work-preview.tgvet { background: linear-gradient(135deg, #0d1520, #1a2e42); }
+    .work-preview.tgadvice { background: linear-gradient(135deg, #0d1a0f, #142a18); }
+    .work-preview.tgshop { background: linear-gradient(135deg, #130d1a, #221030); }
     .work-info { padding: 1.5rem; }
     .work-tag {
       font-size: 0.72rem; font-weight: 700;
@@ -314,7 +317,7 @@
     </div>
     <div class="hero-nums">
       <div>
-        <span class="num-val">5+</span>
+        <span class="num-val">9+</span>
         <span class="num-label">Проектов сдано</span>
       </div>
       <div>
@@ -347,6 +350,12 @@
       <div class="svc-price">от 7 000 ₽</div>
     </div>
     <div class="svc">
+      <div class="svc-icon">🤖</div>
+      <h3>Telegram-бот</h3>
+      <p>Бот для бизнеса: запись клиентов, каталог товаров, подписки, рассылки, CRM-уведомления.</p>
+      <div class="svc-price">от 5 000 ₽</div>
+    </div>
+    <div class="svc">
       <div class="svc-icon">📱</div>
       <h3>Адаптивная вёрстка</h3>
       <p>Корректное отображение на любом экране — телефон, планшет, компьютер.</p>
@@ -365,6 +374,8 @@
   <div class="s-label">Портфолио</div>
   <h2>Мои работы</h2>
   <p class="s-sub">Реальные проекты — смотри живые версии.</p>
+
+  <div class="s-label" style="margin-bottom:0.75rem;margin-top:0">Лендинги и приложения</div>
   <div class="works-grid">
     <div class="work-card">
       <div class="work-preview barber">💈</div>
@@ -418,6 +429,37 @@
         <h3>PawBook</h3>
         <p>Электронный дневник здоровья питомца. Electron + React + Supabase. Вакцинации, визиты, лекарства.</p>
         <a href="https://github.com/brumous1/pawbook" target="_blank" class="work-link">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="s-label" style="margin-bottom:0.75rem;margin-top:3.5rem">Telegram-боты</div>
+  <div class="works-grid">
+    <div class="work-card">
+      <div class="work-preview tgvet">🏥</div>
+      <div class="work-info">
+        <div class="work-tag">Telegram Bot · Python · aiogram 3</div>
+        <h3>VetClinic Bot</h3>
+        <p>Бот для записи в ветклинику. FSM-запись: услуга → дата → время → подтверждение. SQLite, история записей.</p>
+        <a href="https://github.com/brumous1/vetclinic-bot" target="_blank" class="work-link">GitHub</a>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-preview tgadvice">🐾</div>
+      <div class="work-info">
+        <div class="work-tag">Telegram Bot · Подписка · Telegram Stars</div>
+        <h3>PetAdvice Bot</h3>
+        <p>35+ советов по уходу за животными. Подписка на ежедневные рассылки, оплата через Telegram Stars.</p>
+        <a href="https://github.com/brumous1/petadvice-bot" target="_blank" class="work-link">GitHub</a>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-preview tgshop">🛍</div>
+      <div class="work-info">
+        <div class="work-tag">Telegram Bot · Магазин · Корзина</div>
+        <h3>ZooShop Bot</h3>
+        <p>Интернет-магазин зоотоваров прямо в Telegram. Каталог 12 товаров, корзина, оформление заказа, история.</p>
+        <a href="https://github.com/brumous1/zooshop-bot" target="_blank" class="work-link">GitHub</a>
       </div>
     </div>
   </div>
@@ -483,6 +525,7 @@
         <option value="" disabled selected>Тип проекта</option>
         <option>Лендинг</option>
         <option>Сайт компании</option>
+        <option>Telegram-бот</option>
         <option>Другое</option>
       </select>
       <textarea placeholder="Расскажите о проекте — что нужно, в какие сроки"></textarea>
